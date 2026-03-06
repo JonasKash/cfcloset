@@ -553,6 +553,58 @@
     }
 
     /* ========================================
+       CARD HEADER GRADIENTE (sem imagem de pessoa)
+       ======================================== */
+    .card-header {
+      width: 100%;
+      height: 155px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .card-header svg {
+      width: 36px;
+      height: 36px;
+      opacity: 0.85;
+    }
+
+    .card-header span {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+
+    .ch-1 {
+      background: linear-gradient(135deg, #4a1030 0%, #8b2252 100%);
+    }
+
+    .ch-2 {
+      background: linear-gradient(135deg, #3d0a35 0%, #7c2fa0 100%);
+    }
+
+    .ch-3 {
+      background: linear-gradient(135deg, #5c1028 0%, #c04070 100%);
+    }
+
+    .ch-4 {
+      background: linear-gradient(135deg, #2a0a3a 0%, #8040b0 100%);
+    }
+
+    .ch-5 {
+      background: linear-gradient(135deg, #4a1520 0%, #b04060 100%);
+    }
+
+    .ch-6 {
+      background: linear-gradient(135deg, #1a0820 0%, #603080 100%);
+    }
+
+    /* ========================================
        FAQ
        ======================================== */
     .faq-list {
@@ -697,7 +749,8 @@
 
     <!-- HERO -->
     <section class="hero" aria-label="Apresentação">
-      <img class="hero-logo" src="Pose virando para a câmera.png" alt="CF Closet" data-anim="0" loading="eager">
+      <img class="hero-logo" src="Logo.jpg" alt="CF Closet" data-anim="0" loading="eager"
+        style="object-position: center center;">
       <h1 data-anim="1">Moda que Transforma</h1>
       <p data-anim="2">Roupas femininas selecionadas para cada momento do seu dia</p>
     </section>
@@ -798,126 +851,156 @@
 
         <!-- CARD 1 — Básicos & Croppeds -->
         <div class="product-card glass">
-          <img src="nana_banana_cropped_1772809692173.png" alt="Básicos e Croppeds" loading="lazy">
+          <div class="card-header ch-1">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span>Básicos & Croppeds</span>
+          </div>
           <div class="product-card-body">
             <p class="product-name">Básicos & Croppeds</p>
             <div class="product-price-row">
               <span class="product-price">A partir de R$ 79,90</span>
             </div>
             <p class="product-desc">Peças coringa para o seu dia a dia com muito estilo.</p>
-            <a class="btn-reserve"
-              href="https://api.whatsapp.com/send/?phone=5585998410037&text=Olá%2C+quero+ver+os+básicos+e+croppeds+disponíveis!"
-              target="_blank" rel="noopener noreferrer">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            <a class="btn-reserve" href="https://www.cfcloset.com.br/produtos" target="_blank"
+              rel="noopener noreferrer">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:16px; height:16px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
-              Pedir via WhatsApp
+              Ver no Site
             </a>
           </div>
         </div>
 
         <!-- CARD 2 — Conjuntos -->
         <div class="product-card glass">
-          <img src="nana_banana_set_1772809650095.png" alt="Conjuntos" loading="lazy">
+          <div class="card-header ch-2">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+            </svg>
+            <span>Conjuntos</span>
+          </div>
           <div class="product-card-body">
             <p class="product-name">Conjuntos</p>
             <div class="product-price-row">
               <span class="product-price">A partir de R$ 129,90</span>
             </div>
             <p class="product-desc">Combinações perfeitas para qualquer ocasião.</p>
-            <a class="btn-reserve"
-              href="https://api.whatsapp.com/send/?phone=5585998410037&text=Olá%2C+quero+ver+os+conjuntos+disponíveis!"
-              target="_blank" rel="noopener noreferrer">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            <a class="btn-reserve" href="https://www.cfcloset.com.br/produtos" target="_blank"
+              rel="noopener noreferrer">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:16px; height:16px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
-              Pedir via WhatsApp
+              Ver no Site
             </a>
           </div>
         </div>
 
         <!-- CARD 3 — Vestidos -->
         <div class="product-card glass">
-          <img src="nana_banana_dress_1772809576040.png" alt="Vestidos" loading="lazy">
+          <div class="card-header ch-3">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 2c0 0-4 4-4 8v10h8V10c0-4-4-8-4-8zM8 10H5l1 12h12l1-12h-3" />
+            </svg>
+            <span>Vestidos</span>
+          </div>
           <div class="product-card-body">
             <p class="product-name">Vestidos</p>
             <div class="product-price-row">
               <span class="product-price">A partir de R$ 149,90</span>
             </div>
             <p class="product-desc">Longos, curtos e midi para arrasar em qualquer evento.</p>
-            <a class="btn-reserve"
-              href="https://api.whatsapp.com/send/?phone=5585998410037&text=Olá%2C+quero+ver+os+vestidos+disponíveis!"
-              target="_blank" rel="noopener noreferrer">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            <a class="btn-reserve" href="https://www.cfcloset.com.br/produtos" target="_blank"
+              rel="noopener noreferrer">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:16px; height:16px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
-              Pedir via WhatsApp
+              Ver no Site
             </a>
           </div>
         </div>
 
         <!-- CARD 4 — Macacão -->
         <div class="product-card glass">
-          <img src="nana_banana_beachwear_1772809673915.png" alt="Macacão" loading="lazy">
+          <div class="card-header ch-4">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 2a4 4 0 014 4v1h1a2 2 0 012 2v11a2 2 0 01-2 2H7a2 2 0 01-2-2V9a2 2 0 012-2h1V6a4 4 0 014-4z" />
+            </svg>
+            <span>Macacão</span>
+          </div>
           <div class="product-card-body">
             <p class="product-name">Macacão</p>
             <div class="product-price-row">
               <span class="product-price">A partir de R$ 139,90</span>
             </div>
             <p class="product-desc">Looks completos e versáteis com todo o estilo que você merece.</p>
-            <a class="btn-reserve"
-              href="https://api.whatsapp.com/send/?phone=5585998410037&text=Olá%2C+quero+ver+os+macacões+disponíveis!"
-              target="_blank" rel="noopener noreferrer">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            <a class="btn-reserve" href="https://www.cfcloset.com.br/produtos" target="_blank"
+              rel="noopener noreferrer">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:16px; height:16px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
-              Pedir via WhatsApp
+              Ver no Site
             </a>
           </div>
         </div>
 
         <!-- CARD 5 — Biquíni & Saídas -->
         <div class="product-card glass">
-          <img src="nana_banana_beachwear_1772809673915.png" alt="Biquíni e Saídas de Praia" loading="lazy">
+          <div class="card-header ch-5">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 3c-1 2-3 3-5 3s-4-1-4-1v2s2 7 9 7 9-7 9-7V5s-2 1-4 1-4-1-5-3zM8 22v-7M16 22v-7" />
+            </svg>
+            <span>Biquíni & Saídas</span>
+          </div>
           <div class="product-card-body">
             <p class="product-name">Biquíni & Saídas</p>
             <div class="product-price-row">
               <span class="product-price">A partir de R$ 89,90</span>
             </div>
             <p class="product-desc">Para arrasar na praia com muito charme e elegância.</p>
-            <a class="btn-reserve"
-              href="https://api.whatsapp.com/send/?phone=5585998410037&text=Olá%2C+quero+ver+os+biquínis+e+saídas+disponíveis!"
-              target="_blank" rel="noopener noreferrer">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            <a class="btn-reserve" href="https://www.cfcloset.com.br/produtos" target="_blank"
+              rel="noopener noreferrer">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:16px; height:16px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
-              Pedir via WhatsApp
+              Ver no Site
             </a>
           </div>
         </div>
 
         <!-- CARD 6 — Casacos & Bolsas -->
         <div class="product-card glass">
-          <img src="nana_banana_coat_bag_1772809713981.png" alt="Casacos e Bolsas" loading="lazy">
+          <div class="card-header ch-6">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9zM9 21v-6m6 6v-6" />
+            </svg>
+            <span>Casacos & Bolsas</span>
+          </div>
           <div class="product-card-body">
             <p class="product-name">Casacos & Bolsas</p>
             <div class="product-price-row">
               <span class="product-price">A partir de R$ 99,90</span>
             </div>
             <p class="product-desc">Complete o look com acessórios e peças de sobreposição.</p>
-            <a class="btn-reserve"
-              href="https://api.whatsapp.com/send/?phone=5585998410037&text=Olá%2C+quero+ver+os+casacos+e+bolsas+disponíveis!"
-              target="_blank" rel="noopener noreferrer">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            <a class="btn-reserve" href="https://www.cfcloset.com.br/produtos" target="_blank"
+              rel="noopener noreferrer">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:16px; height:16px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
-              Pedir via WhatsApp
+              Ver no Site
             </a>
           </div>
         </div>
@@ -983,25 +1066,7 @@
       </div>
     </div>
 
-    <!-- CTA -->
-    <div class="scroll-reveal">
-      <div class="cta-section glass">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-        <h3>Sua próxima peça favorita te espera!</h3>
-        <p>Fale com a gente pelo WhatsApp e encontre o look perfeito para você. Atendimento rápido e personalizado.</p>
-        <a href="https://api.whatsapp.com/send/?phone=5585998410037&text=Olá%2C+vim+ver+a+coleção+da+CF+Closet+e+quero+conhecer+as+novidades!"
-          target="_blank" rel="noopener noreferrer" class="btn-shimmer">
-          <svg fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-          </svg>
-          FALAR NO WHATSAPP
-        </a>
-      </div>
-    </div>
+
 
     <!-- FAQ -->
     <div class="section scroll-reveal" style="margin-bottom:8px">
