@@ -317,42 +317,7 @@
     /* ========================================
        MAPA
        ======================================== */
-    .map-widget {
-      width: 100%;
-      border-radius: 22px;
-      overflow: hidden;
-      margin-bottom: 20px;
-      padding: 4px;
-    }
 
-    .map-widget iframe {
-      width: 100%;
-      height: 175px;
-      border: 0;
-      border-radius: 18px;
-      display: block;
-      filter: grayscale(20%) brightness(0.9);
-      transition: filter 0.3s ease;
-    }
-
-    .map-widget:hover iframe,
-    .map-widget:focus-within iframe {
-      filter: grayscale(0%) brightness(1);
-    }
-
-    .map-label {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      opacity: 0.65;
-      padding: 7px 4px 2px;
-    }
-
-    .map-label svg {
-      width: 13px;
-      height: 13px;
-    }
 
     /* ========================================
        FOOTER
@@ -531,19 +496,7 @@
 
       </nav>
 
-      <!-- MAPA -->
-      <div class="map-widget glass" data-anim="8" aria-label="Localização">
-        <iframe title="Localização CF Closet"
-          src="https://maps.google.com/maps?q=R.+Jo%C3%A3o+Forte,+488,+Padre+Romualdo,+Caucaia,+CE,+61601-350&output=embed"
-          loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="map-label" aria-hidden="true">
-          <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-          </svg>
-          R. João Forte, 488 · Padre Romualdo · Caucaia, CE
-        </p>
-      </div>
+
 
       <!-- FOOTER -->
       <footer data-anim="9" role="contentinfo">
