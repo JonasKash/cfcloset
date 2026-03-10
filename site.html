@@ -47,11 +47,21 @@
       object-position: center top;
     }
 
+    /* Ajuste para Desktop */
+    @media (min-width: 1024px) {
+      .bg-media img {
+        object-position: center 20%;
+      }
+    }
+
     .bg-overlay {
       position: fixed;
       inset: 0;
       z-index: 1;
-      background: linear-gradient(135deg, #1a0814 0%, #2d0a1f 100%);
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.45) 0%,
+          rgba(0, 0, 0, 0.3) 40%,
+          rgba(45, 10, 31, 0.95) 100%);
     }
 
     /* ========================================
@@ -728,7 +738,10 @@
 
 <body>
 
-
+  <!-- FUNDO -->
+  <div class="bg-media">
+    <img src="Pose em Pé.jpeg" alt="" aria-hidden="true" loading="eager" fetchpriority="high">
+  </div>
   <div class="bg-overlay"></div>
 
   <!-- BOTÃO VOLTAR -->
@@ -1128,7 +1141,7 @@
     <!-- FOOTER -->
     <footer>
       <p>© 2025 CF Closet · Caucaia, CE · Todos os direitos reservados</p>
-      <p>Feito pela <a href="https://www.instagram.com/mateusmachadoprod/" target="_blank"
+      <p>Feito pela <a href="https://www.instagram.com/mateus.pantera/" target="_blank"
           rel="noopener noreferrer">Agência MP</a></p>
     </footer>
 
